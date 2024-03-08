@@ -1,0 +1,20 @@
+﻿@using OperatorReport.Models
+@model List<OperatorReportViewModel>
+
+@foreach (OperatorReportViewModel item in Model)
+{
+    <tr>
+        <td>@item.ID</td>
+        <td>@item.Name</td>
+        <td>@item.ProactiveSent</td>
+        <td>@item.ProactiveAnswered</td>
+        <td>@item.ProactiveResponseRate</td>
+        <td>@item.ReactiveReceived</td>
+        <td>@item.ReactiveAnswered</td>
+        <td>@item.ReactiveResponseRate</td>
+        <td>@item.TotalChatLength</td>
+        <td>@item.AverageChatLength</td>
+    </tr>
+}
+
+
